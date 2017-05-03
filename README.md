@@ -33,7 +33,7 @@ $ make cross
 
 If you don't have [gox](https://github.com/mitchellh/gox), you can use the "in-container" version of `make cross`, listed below.
 
-### Build inside container
+### Build inside a container
 
 ```
 $ make -f docker.Makefile build
@@ -45,6 +45,18 @@ $ make -f docker.Makefile clean
 
 ```
 $ make -f docker.Makefile cross
+```
+
+### Run tests inside a container
+
+```
+$ make -f docker.Makefile test
+```
+
+### Run linters inside a container
+
+```
+make -f docker.Makefile lint
 ```
 
 ### In-container development environment
